@@ -6,7 +6,7 @@ kaviyaah - kavishka sandaruwan (v 8.0.0 avalable)
 .
 
 coded by lusifar -kavishka  dont copy.amaruwen haduwe ekayi
-
+*/
 
 const lusifar = require('../events');
 const { MessageType, Mimetype } = require('@adiwajshing/baileys');
@@ -105,7 +105,7 @@ lusifar.addCommand({ pattern: 'video ?(.*)', fromMe: SKS, desc: Lang.VIDEO_DESC 
 
 
 
-*/
+
 
 /*
 
@@ -233,7 +233,6 @@ lusifar.addCommand({pattern: 'video ?(.*)', fromMe: PUBFM , dontAddCommandList: 
         })
             
     }))
-*/
 
 
 
@@ -321,3 +320,4 @@ let SKS = config.WORKTYPE == 'public' ? true : true
        
       },
     )
+*/
