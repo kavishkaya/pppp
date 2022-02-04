@@ -1,15 +1,16 @@
+
 {
-    "name": "PINKY BY AFNAN PLK",
-    "description": "pinky bot - re-edited from asena. World’s first UserBot made for WhatsApp.",
-    "logo": "https://i.imgur.com/zdcqaaG.jpeg",
-    "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
-    "repository": "https://github.com/afnanplk/Pinky_V2",
+    "name": "Lusifar bot powerd by kaviyaah",
+    "description": "Lusifar bot - re-edited from kaviyaah. World’s first UserBot made for WhatsApp.",
+    "logo": "https://telegra.ph/file/47ada452273967827cbe0.jpg",
+    "keywords": ["whatsapp", "userbot", "Lusifar", "lusifar", "bot", "api", "ai"],
+    "repository": "https://github.com/kavishkaya/Botlusifar",
     "website":   "under maintenance",
     "success_url": "under maintenance",
     "stack": "container",
     "env": {
         "LUSIFAR_SESSION": {
-            "description": "Qr.Js ile oluşturduğunuz özel session kodu. Type here yours Asena Session.",
+            "description": "Qr.Js ile oluşturduğunuz özel session kodu. Type here yours Lusifar Session.",
             "required": true
         },
         "SUDO": {
@@ -21,30 +22,116 @@
             "required": true,
             "value": "en"
         },
-        "WEL_GIF": {
+            "PANEL_COMMAND": {
+            "description": "your panel working for this command. enter a command you like",
+            "required": false,
+            "value": "lusifar"
+        },
+        "WELCOME_GIF": {
             "description": "Fill here any gif link if you selected gif as WEELCOME",
             "required": false,
-            "value": "false"
+            "value": "https://i.imgur.com/nErXUGj.mp4"
         },
-        "BAD_WORDS": {
-            "description": "enter the word you dont allow in your group ",
+        "LUSIFAR_AI": {	
+            "description": "turn on chat back auto reply lusifar (use true to on and fale to off)",	
+            "required": true,	
+            "value": "true"	
+        },	
+        "L_BOT_NAME": {	
+            "description": "give a name you disire to give your bot (for auto reply lusifar to identify)",	
+            "required": false,	
+            "value": "Lusifar"	
+        },	
+        "L_DEP_NAME": {	
+            "description": "bot deployer name make it short  (for auto reply Lusifar to identify)",	
+            "required": false,	
+            "value": "kavishka"	
+        },	
+        "L_DEP_REPLY": {	
+            "description": "enter the reply message you want when deployer name is typed by users  (for auto reply pink to identify)",	
+            "required": false,	
+            "value": "i know him he is my creator"	
+        },	
+            "YT_INFO": {	
+            "description": "Show you tube video infomation  ",	
+            "required": true,	
+            "value": "true"	
+        },
+            "TIME_ZONE": {
+            "description": "type your time zone (pass this sri lankan users) ",
+            "required": false,
+            "value": "Asia/Colombo"
+        },
+        "AUTO_REPLY": {	
+            "description": "send reply for somr massages",	
+            "required": false,	
+            "value": "true"	            
+        },
+         "SONGD": {
+            "description": "Customizable Song Download message",
+            "required": false,
+            "value": "*◦•●◉Downloading Your Song◉●•◦*"
+        },
+        "SONGU": {
+            "description": "Customizable Song upload message",
+            "required": false,
+            "value": "*◦•●◉✿Uploading Your Song✿◉●•◦*"
+        },
+          "BYE_GIF": {
+            "description": "Fill here any gif link if you selected gif as WEELCOME",
+            "required": false,
+            "value": "https://i.imgur.com/Z1jCYGN.mp4"
+        },
+         "BGM_FILTER": {
+            "description": "If you likes bgm you can write 'true'. Otherwise false",
+            "required": false,
+            "value": "true"
+        },   
+        "ANTİ_LİNK": {
+            "description": "Link Engelleme Sistemi. Link Blocking System.",
             "required": true,
             "value": "false"
         },
-        "BYE_GIF": {
-            "description": "Fill here any gif link if you selected gif as WEELCOME",
-            "required": false,
+        "ANTIBAD": {
+            "description": "Activate Anti-Bad word for your groups.",
+            "required": true,
             "value": "false"
-        },   
+        
+        },
         "PM_BLOCK": {
             "description": "Link Engelleme Sistemi. Link Blocking System.",
             "required": true,
             "value": "false"
+        },
+         "STICKER_REPLY": {
+            "description": "if you need Automatic sticker reply type'true'. Otherwise false",
+            "required": false,
+            "value": "true"
         },  
+         "THERI_KICK_GP": {
+            "description": "will remove members from group if they use bad words given in THERI_LIST_GP , if true ",
+            "required": true,
+            "value": "false"
+        },
         "NUMBER": {
             "description": "give your orginal phone number if you wish to add it in .number cmnd ",
             "required": false
-        },      
+        },
+         "THERI_KICK_PM": {
+            "description": "will block members if they use bad words given in THERI_LIST_PM , if true ",
+            "required": true,
+            "value": "false"
+        },
+         "THERI_LIST_GP": {
+            "description": "enter the word you dont allow in your group ",
+            "required": true,
+            "value": "false"
+        },
+         "THERI_LIST_PM": {
+            "description": "enter the words you dont allow in your pm ",
+            "required": true,
+            "value": "false"
+        },        
         "OWNER_NAME": {
             "description": "reply for .owner ! give your details, Use => default, to change back.",
             "required": false,
@@ -54,6 +141,11 @@
             "description": "Komutlar için. For commands.",
             "required": true,
             "value": "^[.!;]"
+        },
+        "ALL_LINK_BAN": {
+            "description": "Link Blocking System.- this one blocks all link",
+            "required": true,
+            "value": "false"
         },
         "NO_LOG": {
             "description": "Hata logu görmek istemiyorsanız true yapın. Set true if you don't want to see error log.",
@@ -68,7 +160,7 @@
            "ALL_CAPTION": {
             "description": "Caption for images and videos generated by pinky bot",
             "required": false,
-            "value": "PUBLIC BOT"
+            "value": "Lusifar"
         },
         "HEROKU": {
             "description": "Herokuda çalışıyorsa true yazın. If it is running in Heroku, type true.",
@@ -78,8 +170,13 @@
          "BOT_NAME": {
             "description": "heading for .list command reply",
             "required": false,
-            "value": "•━━━╼⤏PINKY BOT⤎╾━━━•"
+            "value": "Lusifar bot"
         },      
+        "TALKING_LUSIFAR": {
+            "description": "Hesabınızı bir Chatbot'a Çevirin! Turn your account into a chatbot!",
+            "required": true,
+            "value": "false"
+        },
         "HEROKU_API_KEY": {
             "description": "Herokuda API Keyiniz. Heroku API Key.",
             "required": true
@@ -110,7 +207,7 @@
             "value": "default"
         },
         "WORK_TYPE": {
-            "description": "pinky  Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot. and if you use “admin”, only admin can use bot and not all feature (only features needed to maintain a standerd group)",
+            "description": "Lusifar  Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot. and if you use “admin”, only admin can use bot and not all feature (only features needed to maintain a standerd group)",
             "required": true,
             "value": "private"
         },
@@ -124,17 +221,13 @@
             "value": "false"
         },
         "REMOVE_BG_API_KEY": {
-            "description": "Fotoğrafların arkaplanını kaldırır. https://remove.bg",
-            "required": false
-        },
-        "DEPLOYER": {
-            "description": "enter your name here",
+            "description": "go to this web site to get api key. https://remove.bg",
             "required": false
         },
         "ALIVE_MESSAGE": {
-            "description": "Customizable Alive Message! use {pp} if you want to add profile picture also add {qt} if you want to add qoutes in your welcome message",
+            "description": "Customizable Alive Message! Use => default, to change back.",
             "required": false,
-            "value": "i am alive  \n\n ```coded by afnan pallikkel```\n\n```{qt}```"
+            "value": "*Hey friends* \n\n ```i am online now```"
         },
         "BAN_MESSAGE": {
             "description": "Customizable kick Message! Use => default, to change back.",
@@ -173,7 +266,9 @@
         },
         "TAG_REPLY": {
             "description": "Enter jid of your number so that you get a audio reply when metioned example - 91xxxxxxxxxx@s.whatsapp.net - for india",
-            "required": false          
+            "required": false ,
+           "value": "Lusifar Tag all"
+            
         },
         "NO_ONLINE": {
             "description": "Çevrimiçi görünmek istemiyorsanız true yazın. Type true if you don't want to appear online.",
