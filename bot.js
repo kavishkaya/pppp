@@ -139,7 +139,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
             }
         });
 
-
+        console.log(
+            chalk.green.bold('Lusifar 𝚠𝚘𝚛𝚔𝚒𝚗𝚐 ' + config.WORKTYPE + ' 𝚗𝚘𝚠 👻'));
     
             if (config.LANG == 'EN' || config.LANG == 'SI') {
                 await git.fetch();
